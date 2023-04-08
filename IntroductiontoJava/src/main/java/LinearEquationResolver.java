@@ -2,12 +2,10 @@ import java.util.Scanner;
 
 public class LinearEquationResolver {
     public static void main(String[] args) {
+        double a,b,x;
         Scanner scanner = new Scanner(System.in);
-        double a;
-        double b;
-        double x;
         System.out.println("Giải phương trình bậc nhất");
-        System.out.println("Cho phương trình a * x + b = 0 , nhập hằng số vào");
+        System.out.println("Cho phương trình ax + b = 0 , nhập hằng số vào");
         System.out.println("Nhập hằng số a");
         a = scanner.nextDouble();
         System.out.println("Nhập hằng số b");
