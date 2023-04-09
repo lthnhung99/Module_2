@@ -1,9 +1,11 @@
 import java.util.Scanner;
 public class ReadNumber {
+    public static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a non-negative integer up to 3 digits: ");
-        int num = sc.nextInt();
+        System.out.println("Nhap so can doc");
+        int num = scanner.nextInt();
+
         String result = "";
         if (num < 0 || num > 999) {
             result = "Out of ability";
@@ -31,8 +33,8 @@ public class ReadNumber {
             }
         }
         System.out.println(result);
-        sc.close();
     }
+
     public static String readOneDigit(int digit) {
         switch (digit) {
             case 1:
@@ -57,6 +59,7 @@ public class ReadNumber {
                 return "";
         }
     }
+
     public static String readTensDigit(int digit) {
         switch (digit) {
             case 2:
@@ -79,6 +82,7 @@ public class ReadNumber {
                 return "";
         }
     }
+
     public static String readTwoDigits(int num) {
         switch (num) {
             case 10:
