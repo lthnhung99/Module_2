@@ -5,27 +5,16 @@ import java.util.Calendar;
 public class StringFormatDemo {
     public static void main(String[] args) {
         /**
-         "% [argument index] [flag] [width] [.precision] type"
-         1. % là một ký tự đặc biệt biểu thị rằng một hướng dẫn định dạng sau.
-         2.[argument index] : xác định chỉ số của các đối số để được định dạng.
-         Nếu không xác định cụ thể, các đối số sẽ được định dạng
-         theo thứ tự như chúng xuất hiện trong danh sách đối số.
-         3.  [flag] là một hướng dẫn định dạng đặc biệt.
-         Ví dụ, cờ + xác định rằng một giá trị số phải luôn luôn được định dạng với một ký hiệu,
-         và cờ 0 chỉ định rằng 0 là ký tự đệm.
-         Các cờ khác bao gồm – đó là pad ở bên phải,
-         + pad ở bên trái (nếu đối tượng được định dạng là một chuỗi).
-         Lưu ý rằng một số cờ không thể được kết hợp với một số cờ khác
-         hoặc với các đối tượng được định dạng nhất định.
-         4.[width] xác định số lượng tối thiểu các ký tự output cho đối tượng đó.
-         5.[.precession] xác định chính xác của các số dấu chấm động trong output.
-         Đó là cơ bản số chữ số thập phân bạn muốn in trên đầu ra.
-         Nhưng nó có thể được sử dụng cho các loại khác để cắt giảm chiều rộng đầu ra
-         6. type : type và % là các tham số định dạng bắt buộc duy nhất.
-         type là kiểu đối tượng sẽ được định dạng trong đầu ra.
-         Đối với các số nguyên d, cho các chuỗi đó là s,
-         cho các số dấu phẩy là f, cho các số nguyên có định dạng hex là x.
+         * %s : strings (Định dạng chuỗi)
+         * %d : decimal integers (Định dạng số nguyên)
+         * %f : floating-point numbers (Định dạng số thực)
+         * %b : booleans (true/false)
+         * %c : characters (Định dạng ký tự)
+         * %tT : date/time values. (Định dạng thời gian thực, đầy đủ giờ, phút, giây)
+         * %n : line separator (xuống dòng)
+         */
 
+        /**
          // giá trị của số nguyên 15
          System.out.printf("Integer : %d\n", 15);
          //giá trị của số thực 1.21312939123 được làm tròn đến 3 chữ số thập phân
@@ -75,9 +64,6 @@ public class StringFormatDemo {
          // Format the am and pm part.
          System.out.printf("AM/PM: %1$tp \n", cal);
          */
-
-        System.out.printf("%-6s%-6s%s\n", "Column 1", "Column 2", "Column3");
-        System.out.printf("%-12d%-12d%07d\n", 15, 12, 5);
 
     }
 }

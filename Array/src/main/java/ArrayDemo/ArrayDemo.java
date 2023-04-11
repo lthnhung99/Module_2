@@ -31,21 +31,24 @@ public class ArrayDemo {
         for (int i = 0; i < b.length; i++){
             System.out.printf("b[%d] - %d \n", i, b[i]);
         }
-
-//        Scanner input = new Scanner(System.in);
-//        System.out.print("Nhập tên: ");
-//        String name = input.nextLine();
-//        System.out.print("Nhập tuổi: ");
-//        //int age = input.nextInt(); // bị trôi lệnh tại đây
-//        // input.nextLine(); // cách 1:đã xử lý trôi lệnh
-//       // int age = Integer.parseInt(input.nextLine()); // cách 2:đã xử lý trôi lệnh
-//        int age = Integer.valueOf(input.nextLine()); // cách 3:đã xử lý trôi lệnh
-//
-//        System.out.print("Nhập địa chỉ: ");
-//        String address = input.nextLine();
-//
-//        System.out.println(name + " -- " + age + " -- " + address);
         */
+        /**-----------Chống trôi lệnh
+        Xảy ra khi chúng ta nhập vào trước 1 số rồi sau đó nhập vào 1 chuỗi
+        thì lúc này có hiện tượng trôi lệnh.*/
+        Scanner input = new Scanner(System.in);
+        System.out.print("Nhập tên: ");
+        String name = input.nextLine();
+        System.out.print("Nhập tuổi: ");
+        //int age = input.nextInt(); // bị trôi lệnh tại đây
+        // input.nextLine(); // cách 1:đã xử lý trôi lệnh
+       // int age = Integer.parseInt(input.nextLine()); // cách 2:đã xử lý trôi lệnh
+        int age = Integer.valueOf(input.nextLine()); // cách 3:đã xử lý trôi lệnh
+
+        System.out.print("Nhập địa chỉ: ");
+        String address = input.nextLine();
+
+        System.out.println(name + " -- " + age + " -- " + address);
+
 
     }
 }
