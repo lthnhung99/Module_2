@@ -1,0 +1,104 @@
+I.Phân biệt biến mảng (biến tham chiếu), Đối tượng mảng:
+1.Biến mảng (biến tham chiếu):
+biến mảng có thể được khai báo bằng cách chỉ định kiểu dữ liệu
+và tên biến, nhưng không cần phải khởi tạo
+kích thước của mảng trực tiếp.
+Ví dụ:int arr[5]; // Khai báo một biến mảng kiểu int với kích thước 5
+2.Đối tượng mảng:
+đối tượng mảng là một đối tượng được tạo ra bằng từ khóa new
+và có thể được truy cập bằng các phương thức
+và thuộc tính của đối tượng.
+Ví dụ:int[] arr = new int[5]; // Tạo một đối tượng mảng kiểu int với kích thước 5
+II. Quá trình khởi tạo mảng:
+- Sử dụng từ khoá new để khởi tạo mảng:
+arrayRefVar = new elementType[arraySize];
+Ví dụ: double[] myList = new double[10];
+       double myList[] = new double[10];
+Câu lệnhtrên thực hiện 2 việc:
+1. new elementType[arraySize]: Khởi tạo một mảng mới
+2. Gán tham chiếu của mảng vừa tạo cho biến arrayRefVar
+• Có thể gộp chung việc khai báo mảng,khởi tạo mảng và gán tham
+chiếu cho biến mảng:
+elementType[] arrayRefVar = new elementType[arraySize];
+Hoặc:
+elementType arrayRefVar[] = new elementType[arraySize];
+Ví dụ:
+String[] names = new String[30];
+String names[] = new String[30];
+
+// tạo một mảng có độ dài 4, thêm các phần tử sau tạo
+String[] cars1 = new String[4];
+
+// tạo một mảng không cần chỉ định số phần tử cụ thể
+String[] cars2 = new String[] { "Honda", "BMW", "Ford", "Mazda" };
+
+// tạo một mảng không cần chỉ định số phần tử cụ thể
+// và không cần dùng từ khóa new
+String[] cars3 = { "Honda", "BMW", "Ford", "Mazda" };
+
+// khai báo một mảng
+String[] cars;
+
+// thêm giá trị, sử dụng từ khóa new
+cars = new String[] { "Honda", "BMW", "Ford" };
+
+// nếu không dùng new sẽ bị lỗi
+cars = {"Honda","BMW","Ford"};
+III.Khởi tạo mảng thông thường và cách khởi tạo nhanh 1 mảng
+1.Khởi tạo mảng thông thường:
+int[] arr1 = new int[5];
+for (int i = 0; i < 5; i++) {
+  arr1[i] = i + 1;
+}
+2. cách khởi tạo nhanh 1 mảng
+Cúpháp:
+elementType[] arrayRefVar = {value0, value1, ..., valuek};
+• Vídụ:
+double[] myList = {1.9, 2.9, 3.4, 3.5};
+IV.Độ dài mảng(length), vị trí(index), truy cập và gán lại giá trị cho mảng
+1.Độ dài mảng(length):
+Khi khởi tạo một mảng thì cần quy định độ dài (length)của mảng đó
+• Độ dài của mảng là số lượng phần tử tối đa mà mảng có thể chứa
+• Độ dài của mảng giúp máy tính biết dung lượng bộ nhớ cần cấp
+phát (allocate) cho mảng
+• Độ dài củamảng còn được gọi làkích thước (size)của mảng
+• Không thể thay đổi kíchthước của mảng sau khi đã khởi tạo
+• Để lấy được độ dài của mảng thì sử dụng thuộc tính length
+Vídụ:double[] myList = new double[10];
+int x = myList.length; //x có giá trị là 10
+2.vị trí(index):
+• Chỉ số(index)của phần tử còn được gọi là vị trí (position) của phần
+tử đó
+• Chỉ số của phần tử đầu tiên là 0
+• Chỉ số của phần tử cuối cùnglà n-1,trong đó n là độ dài của mảng
+3.truy cập và gán lại giá trị cho mảng
+Cú pháp gán lại giá trị:
+arrayRefVar[index] =value;
+Trong đó:
+• index:Chỉ số(vị trí) của phần tử muốn gán giá trị.Chỉ số của phần tử đầu tiên là 0
+• value:Giá trị muốn gán cho phần tử tại vị trí index
+***Muốn sao chép 1 mảng lên kích thước gấp đôi thì làm như thế nào
+Có ba cách để sao chép mảng:
+1.Sử dụng vòng lặp để sao chép từng phần tử riêng lẻ:
+  int[] a = {1,2,3,4,5};
+        int[] b = new int[a.length];
+        for (int i = 0; i < a.length; i++){
+            b[i] = a[i];
+            System.out.printf("b[%d] - %d \n", i, b[i]);
+        }
+2.Sử dụng phương thức tĩnh arraycopy trong lớp System:
+arraycopy(Object src, int srcPos,Object dest, int destPos, int length)
+
+src là mảng nguồn muốn sao chép
+srcPos là vị trí phần tử bắt đầu sẽ sao chép trên mảng nguồn
+dest là mảng đích muốn sao chép từ mảng nguồn sang mảng đích
+destPos là vị trí phần tử bắt đầu trên mảng đích mà mảng nguồn sao chép sang
+length là số phần tử muốn sao chép từ mảng nguồn sang mảng đích
+ví dụ:
+ int[] a = {1,2,3,4,5};
+        int[] b = new int[a.length];
+        System.arraycopy(a, 0, b, 0, a.length);
+        for (int i = 0; i < b.length; i++){
+            System.out.printf("b[%d] - %d \n", i, b[i]);
+        }
+3.Sử dụng phương thức clone để sao chép mảng
