@@ -14,7 +14,7 @@ public class StringFormatDemo {
          * %n : line separator (xuống dòng)
          */
 
-        /**
+
          // giá trị của số nguyên 15
          System.out.printf("Integer : %d\n", 15);
          //giá trị của số thực 1.21312939123 được làm tròn đến 3 chữ số thập phân
@@ -63,7 +63,7 @@ public class StringFormatDemo {
 
          // Format the am and pm part.
          System.out.printf("AM/PM: %1$tp \n", cal);
-         */
+
 
     }
 }
