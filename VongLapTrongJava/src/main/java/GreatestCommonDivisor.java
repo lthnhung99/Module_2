@@ -10,7 +10,7 @@ public class GreatestCommonDivisor {
         b = scanner.nextInt();
         a = Math.abs(a);
         b = Math.abs(b);
-        if(a==0 && b ==0) {
+        if(a == 0 && b == 0) {
             System.out.println("Không có ước chung lớn nhất");
         }
         while (a != b) {

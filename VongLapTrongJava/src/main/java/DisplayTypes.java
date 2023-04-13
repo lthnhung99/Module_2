@@ -15,8 +15,8 @@ public class DisplayTypes {
             choice = scanner.nextInt();
             switch (choice) {
                 case 1:
-                    for (int i = 0; i < 4; i++) {
-                        for (int j = 0; j < 10; j++) {
+                    for (int i = 0; i < 3; i++) {
+                        for (int j = 0; j < 7; j++) {
                             str += "* ";
                         }
                         str += "\n";
