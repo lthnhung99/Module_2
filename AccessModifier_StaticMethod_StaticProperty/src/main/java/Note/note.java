@@ -145,10 +145,6 @@ public class note {
 
      }
 
-     ***this:   Đại diện cho đối tượng hiện tại
-     Nếu muốn constructor nào đó gọi đến một constructor khác
-     Sử dụng this.field để phân biệt field với tham số của phương thức và các biến cục bộ khác
-     truy xuất tới các thành phần của đối tượng hiện tại
 
 
 
