@@ -114,7 +114,7 @@ public class note {
      V.Khai báo getter/setter
      • Cú pháp khai báo getter:
      public returnType getPropertyName()
-     • Đối với các thuộc tính kiểuboolean thì tên getter bắt đầu bằng chữ is:
+     • Đối với các thuộc tính kiểu boolean thì tên getter bắt đầu bằng chữ is:
      public boolean isPropertyName()
      • Cú pháp khai báo setter:
      public void setPropertyName(dataType propertyValue)

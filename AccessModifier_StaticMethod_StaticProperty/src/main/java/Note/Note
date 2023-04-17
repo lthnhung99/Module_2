@@ -1,0 +1,8 @@
+- contructor: phương thức khởi tạo
+- overloading: cùng tên phương thức, khác tham số
+- toString():chuyển đối tượng thành chuỗi
+- từ khóa this: Đại diện cho đối tượng hiện tại(trỏ đến class hiện tại của nó)
+- getter/setter:là cơ chế để kiểm soát truy cập đến các trường dữ liệu của đối tượng
++ getter: các phương thức cho phép lấy về giá trị của thuộc tính
++ setter: các phương thức cho phép thay đổi giá trị của thuộc tính
+- từ khóa new:khởi tạo đối tượng
