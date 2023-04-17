@@ -149,10 +149,6 @@ public class note {
      Nếu muốn constructor nào đó gọi đến một constructor khác
      Sử dụng this.field để phân biệt field với tham số của phương thức và các biến cục bộ khác
      truy xuất tới các thành phần của đối tượng hiện tại
-     • Ví dụ:
-     Person person1;
-     person1 = new Person("John",20);
-     System.out.println("My name is: " + person1.name);
-     System.out.println("My age is: "+ person1.age);
+
      */
 }
