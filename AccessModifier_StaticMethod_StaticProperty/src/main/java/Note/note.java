@@ -14,8 +14,8 @@ public class note {
      hợp lý
      *Tính chất của package
      • Có thể khai báo các gói con-subpackage(gói ở bên tronggói)
-     • Không thể có 2lớp có cùng tên trong cùng 1 gói
-     • Khi một lớp được khai báo bên trong một góithì cầnphải sử dụng
+     • Không thể có 2 lớp có cùng tên trong cùng 1 gói
+     • Khi một lớp được khai báo bên trong một gói thì cần phải sử dụng
      tên của gói nếu muốn truy cập đến lớp đó
      • Tên của gói được viết bằng chữ thường
      • Các gói được cung cấp sẵn của Java được bắt đầu bằng từ java hoặc
@@ -76,7 +76,7 @@ public class note {
      V. khái niệm Nested class, local class:
      - Nested class là lớp được khai báo bên trong lớp khác
      Ví dụ:Inner là một nested class của Outer,
-           có thể truy cập vào biến x và y của Outer
+     có thể truy cập vào biến x và y của Outer
      class Outer {
      private int x;
      private static int y;
@@ -100,7 +100,6 @@ public class note {
      Local l = new Local();
      l.printX();
      }
-
      *Stack:
      Stack là nơi lưu trữ các biến cục bộ,
      tham số và các giá trị nguyên thủy của phương thức.
@@ -111,5 +110,49 @@ public class note {
      Heap là nơi lưu trữ các đối tượng và các biến được tạo động trong chương trình Java.
      Khi một đối tượng được tạo,nó được lưu trữ trong heap
      và một con trỏ trỏ đến địa chỉ đối tượng đó được lưu trong stack.
+
+     V.Khai báo getter/setter
+     • Cú pháp khai báo getter:
+     public returnType getPropertyName()
+     • Đối với các thuộc tính kiểuboolean thì tên getter bắt đầu bằng chữ is:
+     public boolean isPropertyName()
+     • Cú pháp khai báo setter:
+     public void setPropertyName(dataType propertyValue)
+     ví dụ:
+     public class Person {
+     private String name;
+     private int age;
+     public void setName(String name) {
+     this.name = name;
+     }
+     public void setAge(int age) {
+     this.age =age;
+     }
+     public String getName() {
+     return this.name;
+     }
+     public int getAge() {
+     return this.age;
+     }
+
+     public static void main(String[] args) {
+     Person person = new Person();
+     person.setName("John");
+     person.setAge(18);
+     System.out.println("My name is: "+ person.getName());
+     System.out.println("My age is: "+ person.getAge());
+     }
+
+     }
+
+     ***this:   Đại diện cho đối tượng hiện tại
+     Nếu muốn constructor nào đó gọi đến một constructor khác
+     Sử dụng this.field để phân biệt field với tham số của phương thức và các biến cục bộ khác
+     truy xuất tới các thành phần của đối tượng hiện tại
+     • Ví dụ:
+     Person person1;
+     person1 = new Person("John",20);
+     System.out.println("My name is: " + person1.name);
+     System.out.println("My age is: "+ person1.age);
      */
 }
