@@ -1,5 +1,5 @@
 package org.example;
-
+//Bài 5: Kiểm tra mảng có giảm dần hay không
 public class Bai_5 {
     public static void main(String[] args) {
         int[] arr = {10,7,5,3,2};

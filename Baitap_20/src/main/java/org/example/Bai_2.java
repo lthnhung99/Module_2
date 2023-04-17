@@ -1,5 +1,6 @@
 package org.example;
-
+//Bài 2: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố
+//trong mảng 1 chiều các số nguyên
 public class Bai_2 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 5, 7, 10, 9};

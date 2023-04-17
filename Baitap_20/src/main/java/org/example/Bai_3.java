@@ -1,5 +1,5 @@
 package org.example;
-
+//Bài 3: Đếm số lượng giá trị tận cùng bằng 5 trong mảng
 public class Bai_3 {
     public static void main(String[] args) {
         int[] arr = {1, 15, 3, 4, 115, 6, 7, 5};
