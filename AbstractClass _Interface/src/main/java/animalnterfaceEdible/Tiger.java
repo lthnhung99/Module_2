@@ -1,4 +1,4 @@
-package practice.AnimalnterfaceEdible;
+package animalnterfaceEdible;
 
 public class Tiger extends Animal{
     @Override

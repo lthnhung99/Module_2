@@ -1,4 +1,4 @@
-package practice.AnimalnterfaceEdible;
+package animalnterfaceEdible;
 
 public abstract class Animal {
     public abstract String makeSound();

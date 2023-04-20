@@ -1,4 +1,4 @@
-package practice.AnimalnterfaceEdible;
+package animalnterfaceEdible;
 
 public class Apple extends Fruit {
     @Override

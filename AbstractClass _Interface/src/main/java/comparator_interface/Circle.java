@@ -1,4 +1,4 @@
-package compareable_interface;
+package comparator_interface;
 
 public class Circle {
     private double radius = 1;

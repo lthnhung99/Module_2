@@ -1,4 +1,4 @@
-package practice.AnimalnterfaceEdible;
+package animalnterfaceEdible;
 
 public class AbstractAndInterfaceTests {
     public static void main(String[] args) {
