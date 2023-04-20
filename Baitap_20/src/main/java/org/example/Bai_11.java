@@ -1,4 +1,5 @@
 package org.example;
+//Bài 11: Thêm x vào trong mảng tăng nhưng vẫn giữ nguyên tính tăng của mảng
 
 import java.util.Arrays;
 

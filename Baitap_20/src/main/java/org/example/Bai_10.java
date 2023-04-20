@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.Arrays;
+//Bài 10: Thêm 1 phần tử x vào mảng tại vị trí k
 
 public class Bai_10 {
     public static void main(String[] args) {
