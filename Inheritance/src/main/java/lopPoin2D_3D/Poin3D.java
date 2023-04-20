@@ -31,7 +31,7 @@ public class Poin3D extends Poin2D {
     }
 
     public void setXYZ(float x, float y, float z) {
-        setXY(x, y);
+        super.setXY(x, y);
         this.z = z;
     }
 
