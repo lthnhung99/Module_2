@@ -4,9 +4,10 @@ public class Poin2D {
     public static void main(String[] args) {
         Poin2D poin2D = new Poin2D();
         System.out.println(poin2D);
-        poin2D = new Poin2D(2,5);
+        poin2D = new Poin2D(2, 5);
         System.out.println(poin2D);
     }
+
     private float x = 0.0f;
     private float y = 0.0f;
 
@@ -41,9 +42,14 @@ public class Poin2D {
     }
 
     public float[] getXY() {
-        float[] xy = {x, y};
-        return xy;
+         float[] xy = {x, y};
+         return xy;
+//         float[] xy = new float[2];
+//         xy[0]=x;
+//         xy[1]=y;
+//         return xy;
     }
+
     @Override
     public String toString() {
         return "Tọa độ (x,y)= (" + x + "," + y + ")";
