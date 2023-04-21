@@ -1,19 +1,17 @@
 package gia_tri_tuyet_doi;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-
-public class AbsoluteNumberCalculatorTest {
+class AbsoluteNumberCalculatorTest {
     @Test
-    void testFindAbsolute0() {
+    void testFindAbsolute() {
         int number = 0;
         int expected = 0;
-
         int result = AbsoluteNumberCalculator.findAbsolute(number);
         assertEquals(expected, result);
     }
-
     @Test
     void testFindAbsolute1() {
         int number = 1;
@@ -31,4 +29,5 @@ public class AbsoluteNumberCalculatorTest {
         int result = AbsoluteNumberCalculator.findAbsolute(number);
         assertEquals(expected, result);
     }
+
 }
