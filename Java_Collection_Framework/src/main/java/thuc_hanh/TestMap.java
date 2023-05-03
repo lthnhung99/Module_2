@@ -1,4 +1,4 @@
-package thuc_hanh_1;
+package thuc_hanh;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -7,15 +7,15 @@ import java.util.TreeMap;
 
 public class TestMap {
     public static void main(String[] args) {
-        Map<String,Integer> hashMap=new HashMap<>();
-        hashMap.put("Smith",30);
+        Map<String, Integer> hashMap = new HashMap<>();
+        hashMap.put("Smith", 30);
         hashMap.put("Anderson", 31);
         hashMap.put("Lewis", 29);
         hashMap.put("Cook", 29);
         System.out.println("Hiển thị mục trong HashMap");
-        System.out.println(hashMap+"\n");
+        System.out.println(hashMap + "\n");
 
-        Map<String,Integer> treeMap = new TreeMap<>(hashMap);
+        Map<String, Integer> treeMap = new TreeMap<>(hashMap);
         System.out.println("Hiển thị các mục nhập theo thứ tự tăng dần của key ");
         System.out.println(treeMap);
 
